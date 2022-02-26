@@ -1,0 +1,74 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #e0e0c7 , #a8a4af,#69cdff);
+
+}
+h1{
+  display: grid;
+  font-size: 3rem ;
+  font-weight: bold;
+  color: rgba(250, 250, 250, 0.925);
+  align-content: center;
+  justify-content: center;
+}
+
+.App{
+  height: 100vh;
+  width: 100%;
+
+}
+
+.calc{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 50vh;
+  grid-template-columns: repeat(4,80px);
+  grid-template-rows: minmax(80px, auto) repeat(5,80px);
+}
+
+.calc > button {
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: semibold;
+  color: black;
+  border: 1px solid white;
+  outline: none;
+  background-color: #fafafa80;
+  margin: 3px;
+}
+
+.calc > button:hover {
+  background-color: #fafafa;
+}
+
+.span-two{
+  grid-column: span 2;
+}
+
+.output{
+  grid-column: span 4;
+  margin-bottom: 7px;
+  background-color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .prev-ope{
+  color: #00000090;
+  font-size: 1.5rem;
+}
+.output .curre-ope{
+  color: #f78e79;
+  font-size: 2.5rem;
+}
