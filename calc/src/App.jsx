@@ -61,8 +61,8 @@ function getResult(){
       <h1 className='title'>Calculator</h1>
       <div className="calc">
         <div className='output'>
-          <div className='prev-ope'>{curreOpe ? numer1 + curreOpe : ""}</div>
-          <div className='curre-ope'>{result ? result : (!curreOpe ? numer1 : numer2)}</div>
+          <div className='prev-ope'>{curreOpe ? numer1 + curreOpe + numer2 : ""}</div>
+          <div className='curre-ope'>{result ? result : (!curreOpe ? numer1 : " " )}</div>
         </div>
         <button onClick={() => {allClear()}} className='span-two'>AC</button>
         <button onClick={() => {deleteNumber()}}>DEL</button>
